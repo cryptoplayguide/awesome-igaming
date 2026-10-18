@@ -6,7 +6,6 @@ iGaming engineering sits at the intersection of high-throughput payments, real-t
 
 ## Contents
 
-- [Game Engines](#game-engines)
 - [Game Aggregators](#game-aggregators)
 - [Casino Lobby and Backend](#casino-lobby-and-backend)
 - [Slot Machines](#slot-machines)
@@ -20,12 +19,6 @@ iGaming engineering sits at the intersection of high-throughput payments, real-t
 - [Related Lists](#related-lists)
 - [Contributing](#contributing)
 
-## Game Engines
-
-The core service that owns sessions, rounds, bets, settlements, and integrations with game providers.
-
-- [Casino Engine](https://github.com/nekzabirov/IGaming-Game-Engine) - Production-grade iGaming/casino engine in Kotlin/Ktor. Aggregator integrations (Pragmatic Play, OneGameHub, Pateplay), betting lifecycle (place/settle/rollback) with idempotency, freespin mechanics, gRPC API, RabbitMQ events. Hexagonal architecture with DDD and CQRS. Apache 2.0.
-
 ## Game Aggregators
 
 Services that normalize many game providers behind a single API. Operators integrate the aggregator once and gain access to dozens of vendors.
@@ -33,6 +26,7 @@ Services that normalize many game providers behind a single API. Operators integ
 - [Valkyrie](https://github.com/valkyrie-fnd/valkyrie) - Open-source game aggregator in Go. MIT License.
 - [FiversCan](https://github.com/zeusbyte/FiversCan) - iGaming panel and game aggregator API in JavaScript.
 - [NexusGGR Casino API](https://github.com/NexusGGR/casino-api) - Casino API integrating slots, live casino, and sports providers.
+- [Casino Game Aggregator](https://github.com/nekzabirov/Casino-Game-Aggregator) - Casino and sportsbook game aggregation hub in Rust. One gRPC API for operators, adapters for OneGameHub, GamingFlow, Gambutsoft, Skyline, Pragmatic Play, PatePlay and 01.tech, operator wallet callbacks with idempotency and rollback, freespins and freebets, catalog sync and RTP. Apache 2.0.
 
 ## Casino Lobby and Backend
 
@@ -41,6 +35,7 @@ Player-facing lobby applications and supporting backends.
 - [Laravel Social Gaming](https://github.com/promexdotme/laravel-social-gaming) - Open-source social gaming engine on Laravel 11 for retro slots and RNG arcade platforms.
 - [GoldenX Casino Site](https://github.com/MortalSoft/GoldenX-CASINO-SITE) - All-in-one online casino software with customizable games and SEO-optimized design.
 - [Bowie Backend](https://github.com/ryan-west-casino/bowie-backend) - Backend for a casino lobby application.
+- [Currency Exchange Service](https://github.com/nekzabirov/Currency-Exchange-Service) - gRPC currency conversion and exchange-rate service in Rust for wallets and casino backends. Exact integer money units, in-memory rates, pluggable providers (OpenExchangeRates, Coinbase, CoinGecko). Apache 2.0.
 
 ## Slot Machines
 
@@ -73,6 +68,7 @@ Random number generation and provably-fair primitives used in crypto and regulat
 
 - [ProbablyFair](https://github.com/hexafluoride/ProbablyFair) - High-performance provably-fair RNG suited for gambling, in C#.
 - [Provably Fair RNG](https://github.com/dinethlive/provably-fair-rng) - Regulator-credible, open-source RNG for online gambling, in TypeScript.
+- [Provably Fair Casino Games](https://github.com/nekzabirov/Provably-Fair-Casino-Games) - Self-hosted casino games (Mines, Crash, Plinko, Lucky Cups, PvP wheel, Lottery) in Kotlin/Ktor with Vue, Pixi.js and Three.js clients. Outcomes derive from server and player seeds plus a public TON block hash. Apache 2.0.
 
 ## General Game Backends
 
